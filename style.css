@@ -1,0 +1,158 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Pale-blue: #292185;
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --title: 'Red Hat Display', sans-serif;
+}
+
+body{
+    background:url('./images/pattern-background-mobile.svg') no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--title);
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+}
+.order{
+    margin: 1.75rem 0
+}
+
+.order>h1{
+    font-weight: 900;
+    padding: .75rem;
+    
+}
+
+.order>p{
+    font-size: 1rem;
+    color: var(--Desaturated-blue);
+    font-weight:500;
+}
+
+.container .image-container>img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.content-container{
+    text-align: center;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius:  10px;
+
+}
+
+.content-container .content{
+    margin: 2rem;
+    line-height: 1.5;
+
+}
+
+.offer{
+    height: 100%;
+    background:var(--Very-pale-blue);
+    border-radius: 10px;
+    padding: .9rem 0;
+    margin: 1.75rem 0;
+}
+
+.offer .plan{
+    display: flex;
+    margin-left: 15px;
+}
+
+.offer .plan .description{
+    display: inline;
+    width: 50%;
+    position: relative;
+}
+.offer .plan .description>h3{
+    font-weight: 700;
+}
+
+.offer .plan .description>a{
+    position: absolute;
+    top: 20%;
+    right: -50px;
+    width: 10%;
+    font-size: 18px;
+    color: var(--Pale-blue);
+ 
+}
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.buttons .btn{
+    margin: 1.175rem 0;
+    padding: .75rem; 
+    background: var(--Bright-blue);
+    border-radius: 10px;
+    width: 100%;
+    color: var(--Very-pale-blue);
+    transition: .3s ease;
+    /*slight shadow-box*/
+    box-shadow: 5px 10px .5rem rgba(0, 0, 0, 0.199);
+}
+
+.buttons .btn:active{
+    opacity: .5
+}
+
+.buttons .btn-cancel{
+    color: var(--Desaturated-blue);
+}
+
+.buttons .btn-cancel:active{
+    color:var(--Dark-blue)
+}
+
+.offer .plan .description>span{
+    color: var(--Desaturated-blue);
+}
+
+
+.offer .plan .description>a:active{
+    color: var(--Desaturated-blue);
+}
+
+
+@media(min-width: 1440px){
+    body{
+        background:url("./images/pattern-background-desktop.svg") no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        background-color: #E0E8FF;
+    }
+
+}
+
