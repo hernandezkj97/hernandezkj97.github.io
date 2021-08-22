@@ -144,6 +144,10 @@ body{
     color: var(--Desaturated-blue);
 }
 
+.offer .plam.description>a:focus{
+    outline:0;
+}
+
 
 @media(min-width: 1440px){
     body{
