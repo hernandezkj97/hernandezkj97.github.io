@@ -89,7 +89,7 @@ body{
     width: 50%;
     position: relative;
 }
-.offer .plan .description>h3{
+.offer .plan .description>h2{
     font-weight: 700;
 }
 
