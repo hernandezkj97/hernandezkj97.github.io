@@ -26,7 +26,6 @@ body{
     align-items: center;
     justify-content: center;
     font-family: var(--title);
-    flex-direction: column;
 
 }
 
@@ -74,10 +73,9 @@ body{
 }
 
 .offer{
-    height: 100%;
     background:var(--Very-pale-blue);
     border-radius: 10px;
-    padding: .9rem 0;
+    padding: 1.5rem 0;
     margin: 1.75rem 0;
 }
 
@@ -119,28 +117,21 @@ body{
     border-radius: 10px;
     width: 100%;
     transition: .3s ease;
-    /*slight shadow-box*/
     box-shadow: 5px 10px .5rem rgba(0, 0, 0, 0.199);
     border: none;
+    color: var(--Very-pale-blue);
 }
 
 .buttons .btn:active{
     opacity: .5
 }
 
-.buttons .link-cancel{
+.buttons .btn-cancel{
     color: var(--Desaturated-blue);
+    cursor: pointer;
 }
 
-.buttons .primary-btn{
-    color: var(--Very-pale-blue);
-}
-
-.buttons .link-btn{
-    text-decoration:none;
-}
-
-.buttons .link-cancel:active{
+.buttons .btn-cancel:active{
     color:var(--Dark-blue)
 }
 
