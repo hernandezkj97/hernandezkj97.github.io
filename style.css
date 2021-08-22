@@ -26,6 +26,7 @@ body{
     align-items: center;
     justify-content: center;
     font-family: var(--title);
+    flex-direction: column;
 
 }
 
@@ -120,6 +121,7 @@ body{
     transition: .3s ease;
     /*slight shadow-box*/
     box-shadow: 5px 10px .5rem rgba(0, 0, 0, 0.199);
+    border: none;
 }
 
 .buttons .btn:active{
@@ -153,11 +155,11 @@ body{
 }
 
 
-.offer .plan .description>a:active{
+.offer .plan .description .link-change:active{
     color: var(--Desaturated-blue);
 }
 
-.offer .plam.description>a:focus{
+.offer .plan.description .link-change:focus{
     outline:0;
 }
 
@@ -169,6 +171,15 @@ body{
         background-size: cover;
         height: 100vh;
         background-color: #E0E8FF;
+    }
+
+}
+
+@media(max-width: 768px){
+    .offer .plan .description .link-change:active{
+        color: var(--Desaturated-blue);
+        outline: none;
+        text-decoration: none;
     }
 
 }
