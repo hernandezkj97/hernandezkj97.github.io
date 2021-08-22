@@ -117,7 +117,6 @@ body{
     background: var(--Bright-blue);
     border-radius: 10px;
     width: 100%;
-    color: var(--Very-pale-blue);
     transition: .3s ease;
     /*slight shadow-box*/
     box-shadow: 5px 10px .5rem rgba(0, 0, 0, 0.199);
@@ -127,12 +126,26 @@ body{
     opacity: .5
 }
 
-.buttons .btn-cancel{
+.buttons .link-cancel{
     color: var(--Desaturated-blue);
 }
 
-.buttons .btn-cancel:active{
+.buttons .primary-btn{
+    color: var(--Very-pale-blue);
+}
+
+.buttons .link-btn{
+    text-decoration:none;
+}
+
+.buttons .link-cancel:active{
     color:var(--Dark-blue)
+}
+
+.buttons .btn-cancel{
+    border:0;
+    background-color: transparent;
+    color: var(--Desaturated-blue)
 }
 
 .offer .plan .description>span{
